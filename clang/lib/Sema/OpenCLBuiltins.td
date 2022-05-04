@@ -351,9 +351,7 @@ def Float     : Type<"float",     QualType<"Context.FloatTy">>;
 let Extension = Fp64TypeExt in {
   def Double    : Type<"double",    QualType<"Context.DoubleTy">>;
 }
-let Extension = Fp16TypeExt in {
-  def Half      : Type<"half",      QualType<"Context.HalfTy">>;
-}
+def Half      : Type<"half",      QualType<"Context.HalfTy">>;
 def Size      : Type<"size_t",    QualType<"Context.getSizeType()">>;
 def PtrDiff   : Type<"ptrdiff_t", QualType<"Context.getPointerDiffType()">>;
 def IntPtr    : Type<"intptr_t",  QualType<"Context.getIntPtrType()">>;
